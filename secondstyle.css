@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+}
+
+.loader {
+	display: block;
+	margin:  250px auto auto;
+	color: rgb(25, 25, 25, 1.0);
+	font-size: 90px;
+	text-align: center;
+
+}
+
+.dot {
+	animation: fisrt_anim 1.5s infinite;
+}
+
+
+.first-dot {
+	animation-delay: 0s;
+}
+
+.second-dot {
+	animation-delay: 0.5s;
+}
+
+.third-dot {
+	animation-delay: 1s;
+}
+
+
+/* keyframes */
+@keyframes fisrt_anim {
+	0% {
+		transform: scale(1.0);
+	}
+
+	50% {
+		transform: scale(1.2);
+		color: white;
+	}
+
+	100% {
+		transform: scale(1.0);
+		color: rgb(25, 25, 25, 1.0);
+	}
+}
+

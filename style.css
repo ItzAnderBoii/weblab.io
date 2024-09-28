@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	background: rgb(10, 10, 10, 1.0);
+}
+
+div {
+	animation: intro_anim 1.5s ;
+}
+
+.navbar {
+	background: linear-gradient(to bottom, rgb(0, 0, 0,1.0), rgb(15, 15, 15,1.0));
+	background-size: cover;
+	height: 90px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 10;
+	box-shadow: 0 0 3px white,
+	0 0 6px white,
+	0 0 16px black;
+	transition: 1s;
+	opacity: 0.9;
+
+}
+
+.navbar img {
+	display: flex;
+	margin: 13px auto auto;
+	height: 60px;
+	width: auto;
+	border-radius: 100%;
+}
+
+.navbar:hover {
+	transition: 1s;
+	opacity: 0.8;
+}
+
+.bg {
+	background: rgb(10, 10, 10, 1.0);
+	height: 596px;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+	
+}
+
+.bg h1 {
+	display: block;
+	overflow: hidden;
+	text-transform: uppercase;
+	margin: 200px auto auto;
+	font-family: sans-serif;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	animation-delay: 5s;
+	animation: TextChanger 5s infinite;
+
+}
+
+.bg p {
+	display: block;
+	margin: 5px auto auto;
+	font-family: Verdana;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+
+}
+
+.bg .link-1 {
+	display: block;
+	border: 1px solid white;
+	border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    color: white;
+    font-family: Verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 60px auto auto;
+    text-align: center;
+    transition: 1s;
+}
+
+.bg a:hover {
+	background: white;
+	color: black;
+	transition: 1s;
+}
+
+.bg .link-2 {
+	display: block;
+	border: 1px solid white;
+	border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    color: white;
+    font-family: Verdana;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 15px auto auto;
+    text-align: center;
+    transition: 1s;
+}
+
+.bg span {
+	color: limegreen;
+}
+
+
+/* keyframes */
+@keyframes TextChanger {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes intro_anim {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
